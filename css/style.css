@@ -23,6 +23,11 @@
     
 }
 
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
 .container {
     max-width: 1170px;
 }
@@ -36,6 +41,168 @@
     font-family: 'ashleyCrawford';
     color: #5be0e2;
 }
+
+
+
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  background: linear-gradient(180deg, #1e88e5 0%, #90caf9 100%);
+}
+
+
+
+/***********/
+/* Cloud 0 */
+/***********/
+
+.cloud0 {
+  background-color: #fafafa;
+  border-radius: 50px;
+  height: 100px;
+  width: 300px;
+  margin-top: 75px;
+  position: relative;
+  border: 2px dashed #000000;
+}
+
+.cloud0::before {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 175%;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  border: 2px dashed #000000;
+}
+
+.cloud0::after {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -55%;
+  left: 55%;
+  border: 2px dashed #000000;
+}
+
+/***********/
+/* Cloud 1 */
+/***********/
+
+.cloud1 {
+  background-color: #fafafa;
+  border-radius: 50px;
+  height: 100px;
+  width: 300px;
+  margin-top: 75px;
+  position: relative;
+}
+
+.cloud1::before {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 175%;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.cloud1::after {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -75%;
+  left: 55%;
+}
+
+/***********/
+/* Cloud 2 */
+/***********/
+
+.cloud2 {
+  background-color: #fafafa;
+  border-radius: 50px;
+  height: 100px;
+  width: 300px;
+  margin-top: 75px;
+  position: relative;
+  animation: 10s infinite swell, 4s infinite bob;
+}
+
+.cloud2::before {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 160%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  animation: 20s infinite bob;
+}
+
+.cloud2::after {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -50%;
+  left: 15%;
+  animation: 5s infinite swell;
+}
+
+/*************/
+/* Animation */
+/*************/
+
+@keyframes swell {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 
 /*---------------------------- preloader area ----------------------------*/
 
@@ -111,4 +278,107 @@
   }
 }
 
+
+
+/* cloud buttons */
+.button-section {
+  margin-top: 50px;
+}
+
+.button-section a{
+  margin: 10px;
+}
+
+/* Site settings ends */
+
+/* Default button starts */
+
+.default-button {
+  background-color: #d56a36;
+  text-decoration: none;
+  border: 5px solid #d56a36;
+}
+
+/* Default button ends */
+
+/* Cloud animation starts */
+
+.animation-cloud-parts {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.animation-cloud-btn-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.animation-cloud-part {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #f39e59;
+    border-radius: 100%;
+    transform: translate3d(0,150%,0) scale(1.7);
+    transition: transform .45s;
+}
+
+.animation-cloud-part:nth-child(1) {
+    left: 0;
+    transition-delay: 0s;
+}
+
+.animation-cloud-part:nth-child(2) {
+    left: 30%;
+    transition-delay: 80ms;
+}
+
+.animation-cloud-part:nth-child(3) {
+    left: 60%;
+    transition-delay: .16s;
+}
+
+.animation-cloud-part:nth-child(4) {
+    left: 90%;
+    transition-delay: .24s;
+}
+
+.animation-cloud-btn {
+    position: relative;
+}
+
+.animation-cloud-btn:hover .animation-cloud-part {
+    transform: translate3d(0,0%,0) scale(1.7);
+}
+
+.animation-cloud-btn:hover {
+    opacity: 1;
+    border-color: #f39e59;
+}
+
+span.cloud-button-content {
+    z-index: 10;
+    position: relative;
+    color: #fff;
+}
+
+.animation-cloud-btn{
+    border:none;
+    padding: 1.1rem 5rem!important;
+}
+
+/* Cloud animation ends */
+
+
+.full_bg {
+  background-color: #fff;
+  
+}
 
