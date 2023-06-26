@@ -1,0 +1,12 @@
+body {
+    width: auto;
+align-items: center;}
+
+#hero {
+    position: relative;
+    border: 3px solid #73AD21;
+}
+
+img {
+   border: 3px solid red;
+}
