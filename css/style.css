@@ -75,19 +75,19 @@ main {
   width: 300px;
   margin-top: 75px;
   position: relative;
-  border: 2px dashed #000000;
+  animation: 8s infinite swell, 3s infinite bob;
 }
 
 .cloud0::before {
   content: "";
   background-color: #fafafa;
   border-radius: 50%;
-  height: 175%;
-  width: 60%;
+  height: 160%;
+  width: 50%;
   position: absolute;
-  bottom: 0;
-  left: 15%;
-  border: 2px dashed #000000;
+  bottom: 1;
+  left: 35%;
+  animation: 20s infinite bob;
 }
 
 .cloud0::after {
@@ -97,9 +97,10 @@ main {
   height: 100px;
   width: 100px;
   position: absolute;
-  top: -55%;
-  left: 55%;
-  border: 2px dashed #000000;
+  top: -50%;
+  left: 15%;
+  bottom: 0;
+  animation: 6s infinite swell;
 }
 
 /***********/
@@ -109,21 +110,23 @@ main {
 .cloud1 {
   background-color: #fafafa;
   border-radius: 50px;
-  height: 100px;
-  width: 300px;
+  height: 120px;
+  width: 400px;
   margin-top: 75px;
   position: relative;
+  animation: 10s infinite swell, 4s infinite bob;
 }
 
 .cloud1::before {
   content: "";
   background-color: #fafafa;
   border-radius: 50%;
-  height: 175%;
-  width: 60%;
+  height: 160%;
+  width: 50%;
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 35%;
+  animation: 20s infinite bob;
 }
 
 .cloud1::after {
@@ -131,10 +134,11 @@ main {
   background-color: #fafafa;
   border-radius: 50%;
   height: 100px;
-  width: 100px;
+  width: 120px;
   position: absolute;
-  top: -75%;
-  left: 55%;
+  top: -20%;
+  left: 5%;
+  animation: 5s infinite swell;
 }
 
 /***********/
