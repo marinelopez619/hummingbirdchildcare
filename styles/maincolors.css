@@ -26,7 +26,7 @@ footer,
 .fc-button.fc-button-primary,
 .fc .fc-button:not(:disabled), .fc a[data-navlink], .fc-event.fc-event-draggable, .fc-event[href],
 .form-check-input:checked
-{background-color:#7ed957;}
+{background-color:#68ba46;}
 
  h1,a,
 .quote-test:before,
@@ -36,10 +36,10 @@ footer,
 #blog-page blockquote:before,
 #contact i,
 .latest-caption h4
-{color:#7ed957;}
+{color:#68ba46;}
 
 .text-primary
-{color:#7ed957!important;}
+{color:#68ba46!important;}
 
 .form-control:focus,
 .btn.btn-secondary,
@@ -48,12 +48,12 @@ footer,
 .gallery-thumb:hover .overlay-mask,
 #call-to-action,
 .form-check-input:checked
-{border-color:#7ed957;}
+{border-color:#68ba46;}
 
 /* SVG path */
 #deco-clouds path {
-	fill: #7ed957;
-	stroke: #7ed957;
+	fill: #68ba46;
+	stroke: #68ba46;
 }
 
 /*________  Pink________  */
@@ -94,7 +94,7 @@ footer,
 .blog-tags a:hover,
 .fc .fc-button-primary:hover,
 .fc .fc-list-event-dot
-{background-color:#fd67c4;}
+{background-color:#de5bac;}
 
 a:hover, a:focus,
 .breadcrumb a:hover,
@@ -102,13 +102,13 @@ a:hover, a:focus,
 .comment-heading small,
 #about .media i,
 .latest-caption h4:hover
-{color:#fd67c4;}
+{color:#de5bac;}
 
-.btn{border-color:#fd67c4;}
+.btn{border-color:#de5bac;}
 
 /*________  gradient________  */
 
-.img-effect:hover {background: linear-gradient(-45deg, #fd67c4 0%,#5ee0e5 100%);}
+.img-effect:hover {background: linear-gradient(-45deg, #de5bac 0%,#00c0c6 100%);}
 
 /*________  Yellow________  */
 
@@ -120,7 +120,7 @@ footer a,
 .post-info i,
 .breadcrumb>.active,
 .gallery-thumb i:hover
- {color:#5ee0e5;}
+ {color:#00c0c6;}
  
 .navbar-nav,
 .accordion-button:hover,
@@ -146,7 +146,7 @@ footer a,
 .blog-tags a,
 .date-category,
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
-{background-color:#5ee0e5;}
+{background-color:#00c0c6;}
 
 
 .team-item img,
@@ -157,7 +157,7 @@ footer a,
 .comment,
 .header-text,
 .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover
-{border-color:#5ee0e5;}
+{border-color:#00c0c6;}
  
 /*________  Secondary yellow________  */
 
